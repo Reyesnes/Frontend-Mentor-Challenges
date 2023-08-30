@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+                                                                                                        /*
++--------------------------------------------------------------------------------------------------------
+|------> GLOBAL CONFIGURATION
++-------------------------------------------------------------------------------------------------------*/
 
 * {
     box-sizing: border-box;
@@ -7,6 +12,116 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /*To set the font in 10px for all html*/
     font-family: 'Outfit', sans-serif;
+}
+
+                                                                                                        /*
++--------------------------------------------------------------------------------------------------------
+|------> STYLES FOR MAIN CONTAINERS
++-------------------------------------------------------------------------------------------------------*/
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-width: 375px;
+    min-height: 668px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: hsl(212, 45%, 89%);
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 20px;
+    max-width: 320px;
+    max-height: 500px;
+    min-width: 320px;
+    min-height: 500px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+section.qr-code__sectionContainer {
+    display: flex;
+    justify-content: center;
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    border-radius: 20px;
+}
+
+                                                                                                        /*
++--------------------------------------------------------------------------------------------------------
+|------> STYLES FOR SUBCONTAINERS
++-------------------------------------------------------------------------------------------------------*/
+
+figure.qr-code__figureContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center; /* Center horizontally */
+}
+
+figure figcaption.qr-code__textContainer {
+    border-radius: 12px;
+    margin: 5px;
+    padding-top: 22px;
+    text-align: center;
+}
+
+
+                                                                                                        /*
++--------------------------------------------------------------------------------------------------------
+|------> STYLES FOR ELEMENTS
++-------------------------------------------------------------------------------------------------------*/
+
+figure img.qr-code__img {
+    margin: auto;
+    border-radius: 12px;
+    max-width: 288px;
+    max-height: 288px;
+    min-width: 288px;
+    min-height: 288px;
+}
+
+figcaption.qr-code__textContainer h1 {
+    font-size: 2rem;
+    color: hsl(218, 44%, 22%);
+}
+
+figcaption.qr-code__textContainer p {
+    padding-top: 15px;
+    font-size: 1.6rem;
+    color: hsl(220, 15%, 55%);
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: hsl(210, 95%, 89%);
+    outline: 2px hsl(210, 43%, 81%) solid;
+    font-size: 1.1rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+
+                                                                                                        /*
++--------------------------------------------------------------------------------------------------------
+|------> HOVER EFFECTS
++-------------------------------------------------------------------------------------------------------*/
+
+section.qr-code__sectionContainer:hover {
+    box-shadow: 3px 2px 11px hsl(216, 98%, 60%);
+}
+
+figcaption.qr-code__textContainer h1:hover {
+    font-size: 2rem;
+    color: hsl(216, 98%, 60%);
 }
