@@ -42,6 +42,7 @@ main {
     min-width: 320px;
     min-height: 500px;
     background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 45px hsl(220, 15%, 55%);
 }
 
 section.qr-code__sectionContainer {
@@ -88,13 +89,13 @@ figure img.qr-code__img {
 }
 
 figcaption.qr-code__textContainer h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: hsl(218, 44%, 22%);
 }
 
 figcaption.qr-code__textContainer p {
     padding-top: 15px;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: hsl(220, 15%, 55%);
 }
 
@@ -122,6 +123,6 @@ section.qr-code__sectionContainer:hover {
 }
 
 figcaption.qr-code__textContainer h1:hover {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: hsl(216, 98%, 60%);
 }
