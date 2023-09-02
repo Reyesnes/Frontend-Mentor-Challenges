@@ -58,7 +58,7 @@ The biggest learning I take away from this project is:
 
 **En HTML** I moved the attribution to a semantic container `<footer>`
 
- - **_Antes:_**
+ - **_Before:_**
 ```html
 <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -67,7 +67,7 @@ The biggest learning I take away from this project is:
 
 ```
 
-- **_Ahora:_**
+- **_After:_**
 ```html
 <footer class="footer">
   <div class="attribution">
@@ -77,7 +77,7 @@ The biggest learning I take away from this project is:
 </footer>
 ```
 
-También en **HTML** utilicé varios contenedores semánticos como `<main>`,`<section>`, `<figure>`
+Also in **HTML** I used several semantic containers such as `<main>`,`<section>`, `<figure>`
 ```html
 <main class="parent-container" id="parent-container__about-qr-code">
 
