@@ -28,7 +28,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Link Here](https://github.com/Reyesnes/Frontend-Mentor-Challenges/tree/main/chllg01_qr-code-component)
-- Live Site URL: [Link Here>](https://reyesnes.github.io/Frontend-Mentor-Challenges/chllg01_qr-code-component/)
+- Github Live Site URL: [Link Here](https://reyesnes.github.io/Frontend-Mentor-Challenges/chllg01_qr-code-component/)
+- Vercel Live Site URL: [Link Here](https://frontend-mentor-challenges-orcin-xi.vercel.app/)
 
 ## My process
 
