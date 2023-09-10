@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    /*Colors*/
+    --white__color: hsl(0, 0%, 100%);
+    --light-gray__color:  hsl(212, 45%, 89%);
+    --grayish-blue__color: hsl(220, 15%, 55%);
+    --dark-blue__color: hsl(218, 44%, 22%);
 
-                                                                                                        /*
+    /*Typography*/
+    --font-family: 'Outfit', sans-serif ;
+    --font-size__title: 2.5rem;
+    --font-size__paragraph: 1.5rem;
+    --font-weigth__title: 700;
+    --font-weigth__paragraph: 400;
+}
+
+/*
 +--------------------------------------------------------------------------------------------------------
 |------> GLOBAL CONFIGURATION
 +-------------------------------------------------------------------------------------------------------*/
@@ -13,10 +26,10 @@
 
 html {
     font-size: 62.5%; /*To set the font in 10px for all html*/
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-family)
 }
 
-                                                                                                        /*
+/*
 +--------------------------------------------------------------------------------------------------------
 |------> STYLES FOR MAIN CONTAINERS
 +-------------------------------------------------------------------------------------------------------*/
@@ -29,7 +42,7 @@ body {
     min-height: 668px;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--light-gray__color);
 }
 
 main {
@@ -41,8 +54,8 @@ main {
     max-height: 500px;
     min-width: 320px;
     min-height: 500px;
-    background-color: hsl(0, 0%, 100%);
-    box-shadow: 3px 3px 45px hsl(220, 15%, 55%);
+    background-color: var(--white__color);
+    box-shadow: 3px 3px 45px var(--grayish-blue__color);
 }
 
 section.qr-code__sectionContainer {
@@ -55,7 +68,7 @@ section.qr-code__sectionContainer {
     border-radius: 20px;
 }
 
-                                                                                                        /*
+/*
 +--------------------------------------------------------------------------------------------------------
 |------> STYLES FOR SUBCONTAINERS
 +-------------------------------------------------------------------------------------------------------*/
@@ -74,7 +87,7 @@ figure figcaption.qr-code__textContainer {
 }
 
 
-                                                                                                        /*
+/*
 +--------------------------------------------------------------------------------------------------------
 |------> STYLES FOR ELEMENTS
 +-------------------------------------------------------------------------------------------------------*/
@@ -89,14 +102,16 @@ figure img.qr-code__img {
 }
 
 figcaption.qr-code__textContainer h1 {
-    font-size: 2.5rem;
-    color: hsl(218, 44%, 22%);
+    font-size: var(--font-size__title);
+    font-weight: var(--font-weigth__title);
+    color: var(--dark-blue__color);
 }
 
 figcaption.qr-code__textContainer p {
     padding-top: 15px;
-    font-size: 1.7rem;
-    color: hsl(220, 15%, 55%);
+    font-size: var(--font-size__paragraph);
+    font-weight: var(--font-weigth__paragraph);
+    color: var(--grayish-blue__color);
 }
 
 footer {
@@ -113,7 +128,7 @@ footer {
 }
 
 
-                                                                                                        /*
+/*
 +--------------------------------------------------------------------------------------------------------
 |------> HOVER EFFECTS
 +-------------------------------------------------------------------------------------------------------*/
