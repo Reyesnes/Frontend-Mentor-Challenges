@@ -1,0 +1,27 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="12" fill="#E5E5E5"/>
+<g id="UI Mobile Design" clip-path="url(#clip0_44_593)">
+<rect width="320" height="3078" transform="translate(-235 -897)" fill="#FAF8F7"/>
+<g id="Group 21">
+<g id="Group 20">
+<g id="Frame 8" clip-path="url(#clip1_44_593)">
+<g id="Frame 18">
+<rect width="95" height="39" transform="translate(-71 -16)" fill="white"/>
+<g id="trending-up 1">
+<path id="Vector" d="M11.5 3L6.75 7.75L4.25 5.25L0.5 9" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.5 3H11.5V6" stroke="#07D635" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_44_593">
+<rect width="320" height="3078" fill="white" transform="translate(-235 -897)"/>
+</clipPath>
+<clipPath id="clip1_44_593">
+<rect width="95" height="159" fill="white" transform="translate(-71 -56)"/>
+</clipPath>
+</defs>
+</svg>
