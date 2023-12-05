@@ -1,0 +1,597 @@
+/* ==============================================================
+I. CONFIGURACIONES GLOBALES
+==============================================================*/
+
+/* variables*/
+:root {
+    /* colors: */
+    --neutral-700: #3D445C;
+    --neutral-white: #FFFFFF;
+    --primary: #2947A9;
+    --midnight-blue: #001F3F;
+    --sky-blue: #00A6FB;
+    --silver-gray: #8D8D8D;
+    --light-gray: #D9D9D9;
+    --smoke-gray: #D7D7D7;
+    --charcoal-gray: #5F5F5F;
+    --powder-blue: #BCD1E7;
+    --forest-green: #19281D;
+    
+
+    /* typography */
+    --font-testimonials: 'Outfit', sans-serif;
+    --font-titles: 'Raleway', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-our-experience: 'Work Sans', sans-serif;
+    --font-bar-nav: 'Poppins', sans-serif;
+    --font-button-header: 'Montserrat', sans-serif;
+
+    --font-weight---title: 700;
+    --font-weight---body: 400;
+    --font-weight--subtitle: 600;
+    --font-weight--barnav-selected: 600;
+    --font-weight--barnav-unselected: 400;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* html settings */
+html {
+    font-size: 62.5%;
+}
+h1, h2, h3 {
+    font-family: var(--font-titles);
+    font-weight: var(--font-weight---title);
+}
+p {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight---body);
+}
+button {
+    cursor: pointer;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+|---> ESQUEMA DE ESTILOS:
+    |---> Tamaños
+    |---> Display
+    |---> Posicionamientos
+    |---> Margenes, Padding, Bordes
+    |---> Colores
+    |---> Tipografía
++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ==============================================================
+II. HEADER --> BARRA NAVEGACION
+============================================================== */
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #D9D9D9; */
+}
+.nav-bar {
+    width: 100%;
+    min-width: 320px;
+    height: 44px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--neutral-white);
+}
+.nav-bar .logo-header {
+    width: 129px;
+    height: 44px;
+}
+.nav-bar ul {
+    font-family: var(--font-bar-nav);
+    font-size: 1.6rem;
+    font-weight: var(--font-weight--barnav-unselected);
+    line-height: normal;
+}
+.nav-bar li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-bar ul li a {
+    color: var(--midnight-blue);
+}
+.nav-bar .button-header--contact {
+    width: 133px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sky-blue);
+    border-radius: 4px;
+}
+.nav-bar .button-header--contact a {
+    font-family: var(--font-button-header);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* ==============================================================
+III. MAIN
+============================================================== */
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+/* ------------- Section 01: Onboarding ------------- */
+
+.onboarding-section--container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/img/nature-background-onboarding.svg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    color: var(--neutral-white);
+}
+
+.onboarding-title--box {
+    width: 90%;
+    min-width: 320px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 79px 0;
+}
+.onboarding-title--box h1 {
+    font-size: 5.2rem;
+    line-height: 58px;
+    font-feature-settings: "salt" on, "liga" off;
+    margin: 0 0 15px 0;
+}
+.onboarding-title--box p {
+    font-size: 1.8rem;
+    line-height: 160%;
+    font-feature-settings: "salt" on, "liga" off;
+}
+
+.onboarding-cards--box {
+    width: 660px;
+    height: 207px;
+    display: flex;
+    justify-content: space-between;
+}
+.onboarding-cards {
+    width: 315px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--neutral-white);
+    border-radius: 0 0 12px 12px;
+}
+.onboarding-cards span.img-card {
+    width: 295px;
+    height: 143px;
+    background-color: var(--light-gray);
+    margin: 10px 0;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.onboarding-cards .img-card__1 {
+    background-image: url("assets/img/protective-security.svg") ;
+}
+.onboarding-cards .img-card__2 {
+    background-image: url("assets/img/protective-psychology.svg") ;
+}
+.onboarding-cards h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--midnight-blue);
+}
+
+/* ------------- Section 02: Our Team ------------- */
+
+.our-team-section--container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.our-team-section--container h2 {
+    font-size: 5.2rem;
+    font-weight: var(--font-weight---title);
+    color: var(--midnight-blue);
+    margin: 92px 0 32px 0;
+    text-align: center;
+}
+/* Contenedor principal que mantiene a los 3 miembros del equipo*/
+.our-team-cards--principal-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1312px;
+    height: auto;
+    max-height: 319px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    position: relative;
+}
+.our-team-card--container {
+    width: 424px;
+    min-width: 350px;
+    max-width: 424px;
+    height: 319px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--powder-blue) 1px;
+    border-radius: 18px;
+    padding: 20px;
+}
+.our-team-card--container .worker-details--box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+/* +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ 
+|----> Fotos de perfil */
+.worker-details--box .picture-profile {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 0 0;
+}
+.worker-details--box.worker-01 .picture-profile {
+    background-image: url("assets/img/LindaWagener.svg");
+}
+.worker-details--box.worker-02 .picture-profile {
+    background-image: url("assets/img/JackParnell.svg");
+}
+.worker-details--box.worker-03 .picture-profile {
+    background-image: url("assets/img/MarcSnailum.svg");
+}
+/* +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ */
+
+.worker-details--box .worker-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.worker-details--box .worker-details-info .worker-name{
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---title);
+    line-height: normal;
+    color: var(--midnight-blue);
+}
+.worker-details--box .worker-details-info .worker-position{
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--charcoal-gray);
+}
+.our-team-card--container .worker-experience--box {
+    max-width: 373px;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+.our-team-card--container .worker-experience--box p {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: var(--silver-gray);
+}
+/* +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ +++++++++ 
+|----> Iconos */
+.our-team-card--container .social-networks--box {
+    width: 129px;
+    max-width: 129px;
+    min-width: 129px;
+    height: auto;
+    max-height: 33px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+}
+.social-networks--box .all-icon--our-team {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social-networks--box .fb--our-team {
+    background-image: url("assets/icons/facebook.svg");
+}
+.social-networks--box .linkedin--our-team {
+    background-image: url("assets/icons/linkedin.svg");
+}
+.social-networks--box .twitter--our-team {
+    background-image: url("assets/icons/twitter.svg");
+}
+
+/* ------------- Section 03: About us ------------- */
+
+.about-us-section--container {
+    width: 100%;
+    min-width: 320px;
+    height: 491px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--powder-blue);
+    padding: 0 90px;
+}
+.about-us-text--box {
+    width: auto;
+    max-width: 529px;
+    height: auto;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-us-text--box h2 {
+    font-size: 5.2rem;
+    line-height: 58px;
+    color: var(--midnight-blue);
+    margin: 0 0 18px 0;
+}
+.about-us-text--box p {
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: #767676;
+}
+.about-us-img---box {
+    width: 584.31px;
+    max-width: 584.31px;
+    min-width: 400px;
+    height: 344.16px;
+    max-height: 344.16px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-img---box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------- Section 04: Our Experience ------------- */
+
+.our-experience-section--container {
+    width: 100%;
+    height: 818px;
+    max-height: 818px;
+    margin: 10px 0 50px 0;
+    position: relative;
+}
+
+.our-experience--img-container {
+    width: 902px;
+    max-width: 902px;
+    min-width: 300px;
+    height: 669px;
+    max-height: 669px;
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 80px;
+    bottom: 65px;
+    box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04), 0px 20px 24px -4px rgba(17, 24, 39, 0.10);
+}
+.our-experience--img-container span {
+    width: 100%;
+    height: 113%;
+    background-image: url("assets/img/img_team--section_our_experience.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+.our-experience--text-container {
+    width: 578px;
+    height: 523px;
+    min-width: 320px;
+    min-width: 293px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--sky-blue);
+    color: var(--neutral-white);
+    position: absolute;
+    right: 165px;
+    top: 140px;
+    padding: 40px 35px;
+}
+.our-experience--text-container h2 {
+    font-family: var(--font-our-experience);
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: normal;
+}
+.our-experience--text-container p {
+    font-family: var(--font-our-experience);
+    font-size: 2.0rem;
+    font-weight: var(--font-weight---body);
+    line-height: normal;
+}
+.our-experience--text-container button {
+    width: 219px;
+    height: 53px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    fill: var(--neutral-white);
+    border-radius: 6px;
+    margin: 15px 0 0 0;
+}
+.our-experience--text-container button a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: normal;
+    color: var(--primary);
+}
+
+/* ------------- Section 05: Our Experience ------------- */
+
+.protective-psychology--section-container {
+    width: 100%;
+    height: auto;
+    padding: 100px 90px;
+    background-color: var(--midnight-blue);
+    color: var(--neutral-white);
+    display: flex;
+}
+article.protective-psychology--article-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.protective-psychology--article-container .left-title-and-body-text--box {
+    width: 738px;
+    max-width: 738px;
+    height: 489px;
+    max-height: 489px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 100px 0 0;
+}
+.protective-psychology--article-container .left-title-and-body-text--box h2 {
+    font-size: 5.2rem;
+    font-weight: var(--font-weight---title);
+    line-height: 58px;
+}
+.protective-psychology--article-container .left-title-and-body-text--box p {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---body);
+    line-height: 160%;
+}
+.protective-psychology--article-container .left-title-and-body-text--box ul {
+    padding: 0 0 0 35px;
+}
+.protective-psychology--article-container .left-title-and-body-text--box ul li {
+    font-family: var(--font-body);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---body);
+    line-height: 160%;
+    list-style: disc;
+}
+.protective-psychology--article-container .right-img-and-card--box {
+    width: 555px;
+    max-width: 555px;
+    height: 413px;
+    max-height: 413;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.right-img-and-card--box .img-two-persons-meeting {
+    width: 438px;
+    height: 271px;
+    background-image: url("assets/img/img_two_people_talking.png");
+    background-position: center;
+    background-repeat: none;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.right-img-and-card--box .worker-card--container {
+    width: 462px;
+    min-width: 350px;
+    max-width: 462px;
+    height: 251px;
+    min-height: 188px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    border-radius: 18px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.worker-card--container .worker-details--box2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+.worker-details--box2 .worker-img-profile {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-image: url("assets/img/LindaWagener__black-border.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 0 0;
+}
+
+.worker-details--box2 .worker-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.worker-details--box2 .worker-details-info .worker-name{
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---title);
+    line-height: normal;
+    color: var(--midnight-blue);
+}
+.right-img-and-card--box .worker-details--box2 .worker-details-info .worker-position{
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--charcoal-gray);
+}
+.right-img-and-card--box .worker-card--container .worker-experience--box {
+    max-width: 373px;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+.right-img-and-card--box .worker-card--container p.worker-experience {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: var(--silver-gray);
+}

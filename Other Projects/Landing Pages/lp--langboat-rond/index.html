@@ -1,86 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- links google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@500&family=Poppins:wght@400;600&family=Raleway:wght@600;700&family=Roboto&family=Work+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
+    <!--MENU DE NAVEGACION HEADER-->
+    <header>
+        <nav class="nav-bar">
+            <!--logo-->
+            <img class="logo-header" src="assets/img/logo_header.svg" alt="" />
+            <!--lista-nav-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Policies</a></li>
+            </ul>
+            <!--boton = contact-->
+            <button class="button-header--contact">
+                <a href="#"> Contact</a>
+            </button>
+        </nav>
+    </header>
 
-<!--MENU DE NAVEGACION HEADER-->
-<header>
-    <div>
-        <!--logo-->
-        <img src="" alt="">
-        <!--lista-nav-->
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Policies</a></li>
-        </ul>
-        <!--boton = contact-->
-        <button>Contact</button>
-    </div>
-</header>
+    <!--SECCION PRINCIPAL-->
+    <main>
+        <!--Onboarding-->
+        <section class="onboarding-section--container">
+            <div class="onboarding-title--box">
+                <h1>One-Stop Solution for All Your Shipping Needs</h1>
+                <p>
+                    Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group
+                    Ltd. As part of the wider group, LbR also has access to the
+                    Norwegian registered Longboat Solutions (LbS) global supply and
+                    logistics team.
+                </p>
+            </div>
 
-<!--SECCION PRINCIPAL-->
-<main>
+            <div class="onboarding-cards--box">
+                <div class="onboarding-cards">
+                    <span class="img-card img-card__1"></span>
+                    <h3>Protective Security</h3>
+                </div>
+                <div class="onboarding-cards">
+                    <span class="img-card img-card__2"></span>
+                    <h3>Protective Psychology</h3>
+                </div>
+            </div>
+        </section>
 
-    <!--Onboarding-->
-    <section>
+        <!--Our team-->
+        <section class="our-team-section--container">
+            <h2>Our Team</h2>
 
-    </section>
+            <div class="our-team-cards--principal-container">
+                <!-- Card #1 -->
+                <article class="our-team-card--container">
+                    <div class="worker-details--box worker-01">
+                        <span class="picture-profile"></span>
+                        <div class="worker-details-info">
+                            <p class="worker-name">Dr Linda Wagener</p>
+                            <p class="worker-position">HEAD OF PROTECTIVE PSYCHOLOGY</p>
+                        </div>
+                    </div>
 
-    <!--Our team-->
-    <section>
+                    <div class="worker-experience--box">
+                        <p>
+                            Linda has decades of experience in clinical psychology, with a
+                            particular focus on trauma management. Her expertise includes:
+                            mental functioning in hostile and extreme environments; gender
+                            security; critical incident staff care; and creating a positive
+                            work climate for all types of organisations.
+                        </p>
+                    </div>
 
-    </section>
+                    <div class="social-networks--box">
+                        <span class="fb--our-team all-icon--our-team"></span>
+                        <span class="linkedin--our-team all-icon--our-team"></span>
+                        <span class="twitter--our-team all-icon--our-team"></span>
+                    </div>
+                </article>
 
-    <!--About us-->
-    <section>
+                <!-- Card #2 -->
+                <article class="our-team-card--container">
+                    <div class="worker-details--box worker-02">
+                        <span class="picture-profile"></span>
+                        <div class="worker-details-info">
+                            <p class="worker-name">Jack Parnell​</p>
+                            <p class="worker-position">HEAD OF PROTECTIVE SECURITY</p>
+                        </div>
+                    </div>
 
-    </section>
+                    <div class="worker-experience--box">
+                        <p>
+                            Jack Parnell has been a security industry professional for over
+                            30 years. He has an extensive background working on complicated
+                            emergencies globally in high-risk, conflict and post-conflict
+                            environments.
+                        </p>
+                    </div>
 
-    <!--Our experience-->
-    <section>
+                    <div class="social-networks--box">
+                        <span class="fb--our-team all-icon--our-team"></span>
+                        <span class="linkedin--our-team all-icon--our-team"></span>
+                        <span class="twitter--our-team all-icon--our-team"></span>
+                    </div>
+                </article>
 
-    </section>
+                <!-- Card #3 -->
+                <article class="our-team-card--container">
+                    <div class="worker-details--box worker-03">
+                        <span class="picture-profile"></span>
+                        <div class="worker-details-info">
+                            <p class="worker-name">Marc Snailum</p>
+                            <p class="worker-position">HEAD OF CYBER SECURITY</p>
+                        </div>
+                    </div>
 
-    <!--Protective psychology-->
-    <section>
+                    <div class="worker-experience--box">
+                        <p>
+                            Marc is an IT management professional with over 20 years of
+                            experience in designing, deploying and managing complex
+                            solutions.
+                        </p>
+                    </div>
 
-    </section>
+                    <div class="social-networks--box">
+                        <span class="fb--our-team all-icon--our-team"></span>
+                        <span class="linkedin--our-team all-icon--our-team"></span>
+                        <span class="twitter--our-team all-icon--our-team"></span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!--Cyber security-->
-    <section>
+        <!--About us-->
+        <section class="about-us-section--container">
+            <div class="about-us-text--box">
+                <h2>Who are we and what we do</h2>
+                <p>
+                    Longboat Rönd (LbR) is a UK registered subsidiary of Longboat Group
+                    Ltd. As part of the wider group, LbR also has access to the
+                    Norwegian registered Longboat Solutions (LbS) global supply and
+                    logistics team.
+                </p>
+            </div>
+            <div class="about-us-img---box">
+                <img src="assets/img/img_who_are_we.png" alt="who-are-we-section-img" />
+            </div>
+        </section>
 
-    </section>
+        <!--Our experience-->
+        <section class="our-experience-section--container">
 
-    <!--Protective security-->
-    <section>
+            <div class="our-experience--img-container">
+                <span class="our-experience--img"></span>
+            </div>
 
-    </section>
+            <div class="our-experience--text-container">
+                <h2>Our Experience</h2>
+                <p>
+                    LbR was created by highly experienced international security
+                    experts and psychologists with decades of combined operational
+                    service in the Governmental, Humanitarian and Private sectors.
 
-    <!--Testimonials-->
-    <section>
+                    With backgrounds in ensuring the physical and mental wellbeing at
+                    the highest levels of government, royalty, Ultra-High Net Worth
+                    families, humanitarians and international diplomats, as well as
+                    global delegations and national sporting teams, the multi-national
+                    team behind LbR has the breadth of experience to address all your
+                    risk management needs.
+                </p>
+                <button>
+                    <a href="#">More on Our History</a>
+                </button>
+            </div>
+        </section>
 
-    </section>
+        <!--Protective psychology-->
+        <section class="protective-psychology--section-container">
+            <article class="protective-psychology--article-container">
 
-    <!--Email us-->
-    <section>
+                <div class="left-title-and-body-text--box">
+                    <h2>Protective <br> Psychology</h2>
+                    <p>The Protective Psychology division of LbR provides a number of services, all with the goal of
+                        reducing the impact on both individuals and organisations, of working in high-stress
+                        environments.</p>
+                    <p>Specifically</p>
+                    <ul>
+                        <li>Individual pre-employment/deployment psychological assessments and bespoke feedback;</li>
+                        <li>Bespoke individual or group resilience training;</li>
+                        <li>Psychological support to management teams during a crisis;</li>
+                        <li>Psychological support and debriefing to individuals subjected to trauma;</li>
+                        <li>Post kidnap reintegration.</li>
+                        <li>Insider threat identification</li>
+                    </ul>
+                </div>
 
-    </section>
-</main>
+                <div class="right-img-and-card--box">
+                    <span class="img-two-persons-meeting"></span>
 
-<!--FOOTER-->
-<footer>
+                    <div class="worker-card--container">
+                        <div class="worker-details--box2">
+                            <span class="worker-img-profile"></span>
+                            <div class="worker-details-info">
+                                <p class="worker-name">Dr Linda Wagener</p>
+                                <p class="worker-position">Divisional head</p>
+                            </div>
+                        </div>
 
-</footer>
+                        <p class="worker-experience">
+                            Linda has decades of experience in clinical psychology, with a particular focus on trauma
+                            management. Her expertise includes: mental functioning in hostile and extreme environments;
+                            gender security; critical incident staff care; and creating a positive work climate for all
+                            types of organisations.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
+        <!--Cyber security-->
+        <section></section>
+
+        <!--Protective security-->
+        <section></section>
+
+        <!--Testimonials-->
+        <section></section>
+
+        <!--Email us-->
+        <section></section>
+    </main>
+
+    <!--FOOTER-->
+    <footer></footer>
 </body>
+
 </html>
