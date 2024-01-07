@@ -230,23 +230,22 @@ main {
 /* Contenedor principal que mantiene a los 3 miembros del equipo*/
 .our-team-cards--principal-container {
     width: 100%;
-    min-width: 320px;
+    /* min-width: 320px; */
     max-width: 1312px;
     height: auto;
     max-height: 319px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* gap: 15px; */
     align-items: center;
     margin: 0 auto;
     margin-bottom: 90px;
     position: relative;
 }
-.our-team-card--container {
+.our-team-cards--principal-container article.our-team-card--container {
     width: 424px;
-    min-width: 350px;
     max-width: 424px;
     height: 319px;
-    min-height: 280px;
     display: flex;
     flex-direction: column;
     border: solid var(--powder-blue) 1px;
@@ -345,8 +344,7 @@ main {
 .about-us-section--container {
     width: 100%;
     min-width: 320px;
-    height: 491px;
-    min-height: 400px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -466,22 +464,22 @@ main {
     color: var(--primary);
 }
 
-/* ------------- Section 05: Our Experience ------------- */
+/* ------------- Section 05: Protective Psychology ------------- */
 
 .protective-psychology--section-container {
     width: 100%;
     height: auto;
     padding: 100px 90px;
     background-color: var(--midnight-blue);
-    color: var(--neutral-white);
     display: flex;
 }
 article.protective-psychology--article-container {
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
+    color: var(--neutral-white);
 }
 .protective-psychology--article-container .left-title-and-body-text--box {
     width: 738px;
@@ -491,12 +489,13 @@ article.protective-psychology--article-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 100px 0 0;
+    padding: 0 50px 0 0;
 }
 .protective-psychology--article-container .left-title-and-body-text--box h2 {
     font-size: 5.2rem;
     font-weight: var(--font-weight---title);
     line-height: 58px;
+    margin: 0 0 18px 0;
 }
 .protective-psychology--article-container .left-title-and-body-text--box p {
     font-size: 1.8rem;
@@ -517,12 +516,13 @@ article.protective-psychology--article-container {
     width: 555px;
     max-width: 555px;
     height: 413px;
-    max-height: 413;
+    max-height: 413px;
     display: flex;
     flex-direction: column;
+    margin: 35px 0 0 0;
     position: relative;
 }
-.right-img-and-card--box .img-two-persons-meeting {
+.protective-psychology--article-container .right-img-and-card--box .img-two-persons-meeting {
     width: 438px;
     height: 271px;
     background-image: url("assets/img/img_two_people_talking.png");
@@ -535,7 +535,7 @@ article.protective-psychology--article-container {
     top: 0;
 }
 
-.right-img-and-card--box .worker-card--container {
+.protective-psychology--article-container .right-img-and-card--box .worker-card--container {
     width: 462px;
     min-width: 350px;
     max-width: 462px;
@@ -545,19 +545,19 @@ article.protective-psychology--article-container {
     flex-direction: column;
     background-color: var(--neutral-white);
     border-radius: 18px;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     position: absolute;
     bottom: 0;
     left: 0;
 }
-.worker-card--container .worker-details--box2 {
+.protective-psychology--article-container .right-img-and-card--box .worker-card--container .worker-details--box2 {
     width: 100%;
     height: auto;
     display: flex;
     margin: 0 0 15px 0;
 }
 
-.worker-details--box2 .worker-img-profile {
+.protective-psychology--article-container .right-img-and-card--box .worker-details--box2 .worker-img-profile {
     width: 58px;
     height: 58px;
     border-radius: 50%;
@@ -568,30 +568,408 @@ article.protective-psychology--article-container {
     margin: 0 10px 0 0;
 }
 
-.worker-details--box2 .worker-details-info {
+.protective-psychology--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.worker-details--box2 .worker-details-info .worker-name{
+.protective-psychology--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-name{
     font-family: var(--font-titles);
     font-size: 1.8rem;
     font-weight: var(--font-weight---title);
     line-height: normal;
     color: var(--midnight-blue);
 }
-.right-img-and-card--box .worker-details--box2 .worker-details-info .worker-position{
+.protective-psychology--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-position{
     font-size: 1.6rem;
     line-height: normal;
     color: var(--charcoal-gray);
 }
-.right-img-and-card--box .worker-card--container .worker-experience--box {
-    max-width: 373px;
-    display: flex;
-    margin: 0 0 15px 0;
-}
-.right-img-and-card--box .worker-card--container p.worker-experience {
+.protective-psychology--article-container .right-img-and-card--box .worker-card--container p.worker-experience {
     font-size: 1.6rem;
     line-height: 22px;
     color: var(--silver-gray);
+}
+
+/* ------------- Section 06: Cyber Security ------------- */
+
+.cyber-security-section--container {
+    width: 100%;
+    height: auto;
+    /* max-height: 500px; */
+    padding: 100px 90px;
+    background-color: var(--neutral-white);
+    display: flex;
+}
+article.cyber-security--article-container {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.cyber-security--article-container .left-title-and-body-text--box {
+    width: 738px;
+    max-width: 738px;
+    height: 350px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 60px 0 0;
+}
+.cyber-security--article-container .left-title-and-body-text--box h2 {
+    font-size: 5.2rem;
+    font-weight: var(--font-weight---title);
+    color: var(--midnight-blue);
+    line-height: 58px;
+}
+.cyber-security--article-container .left-title-and-body-text--box p {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---body);
+    color: #6A6A6A;
+    line-height: 160%;
+}
+.cyber-security--article-container .right-img-and-card--box {
+    width: 555px;
+    max-width: 555px;
+    height: 354px;
+    max-height: 354px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 0 0;
+    position: relative;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.20));
+}
+.cyber-security--article-container .right-img-and-card--box .img-team-meeting {
+    width: 438px;
+    height: 271px;
+    background-image: url("assets/img/img_meeting--section_cyber_security.png");
+    background-position: center;
+    background-repeat: none;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cyber-security--article-container .right-img-and-card--box .worker-card--container {
+    width: 462px;
+    min-width: 350px;
+    max-width: 462px;
+    height: 192px;
+    min-height: 188px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    border-radius: 18px;
+    padding: 20px 40px 20px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.cyber-security--article-container .right-img-and-card--box .worker-card--container .worker-details--box2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+.cyber-security--article-container .right-img-and-card--box .worker-details--box2 .worker-img-profile {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-image: url("assets/img/MarcSnailum__black-border.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 0 0;
+}
+
+.cyber-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cyber-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-name{
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---title);
+    line-height: normal;
+    color: var(--midnight-blue);
+}
+.cyber-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-position{
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--charcoal-gray);
+}
+.cyber-security--article-container .right-img-and-card--box .worker-card--container p.worker-experience {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: var(--silver-gray);
+}
+
+/* ------------- Section 07: Protective Security ------------- */
+
+.protective-security-section--container {
+    width: 100%;
+    height: auto;
+    padding: 100px 90px;
+    background-color: var(--midnight-blue);
+    display: flex;
+}
+article.protective-security--article-container {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    color: var(--neutral-white);
+}
+.protective-security--article-container .left-title-and-body-text--box {
+    width: 738px;
+    max-width: 738px;
+    height: 350px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 60px 0 0;
+}
+.protective-security--article-container .left-title-and-body-text--box h2 {
+    font-size: 5.2rem;
+    font-weight: var(--font-weight---title);
+    color: var(--neutral-white);
+    line-height: 58px;
+}
+.protective-security--article-container .left-title-and-body-text--box p {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---body);
+    line-height: 160%;
+}
+.protective-security--article-container .left-title-and-body-text--box ul {
+    padding: 0 0 0 35px;
+}
+.protective-security--article-container .left-title-and-body-text--box ul li {
+    font-family: var(--font-body);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---body);
+    line-height: 160%;
+    list-style: disc;
+}
+.protective-security--article-container .right-img-and-card--box {
+    width: 555px;
+    max-width: 555px;
+    height: 492px;
+    max-height: 492px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 0 0;
+    position: relative;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.20));
+}
+.protective-security--article-container .right-img-and-card--box .img-team-meeting {
+    width: 438px;
+    height: 271px;
+    background-image: url("assets/img/img_magic_ball--section_protective_security.png");
+    background-position: center;
+    background-repeat: none;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.protective-security--article-container .right-img-and-card--box .worker-card--container {
+    width: 462px;
+    min-width: 462px;
+    max-width: 462px;
+    height: 330px;
+    max-height: 330px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    border-radius: 18px;
+    padding: 20px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.protective-security--article-container .right-img-and-card--box .worker-card--container .worker-details--box2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+.protective-security--article-container .right-img-and-card--box .worker-details--box2 .worker-img-profile {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-image: url("assets/img/LeeJohnson__black-border.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 0 0;
+}
+
+.protective-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.protective-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-name{
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    font-weight: var(--font-weight---title);
+    line-height: normal;
+    color: var(--midnight-blue);
+}
+.protective-security--article-container .right-img-and-card--box .worker-details--box2 .worker-details-info .worker-position{
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--charcoal-gray);
+}
+.protective-security--article-container .right-img-and-card--box .worker-card--container p.worker-experience {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: var(--silver-gray);
+}
+
+/* ------------- Section 08: Testimonials ------------- */
+
+.testimonials-section--container {
+    width: 100%;
+    height: auto;
+    padding: 100px 90px;
+    background-color: var(--neutral-white);
+    display: flex;
+}
+article.testimonials--article-container {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /* border: red 3px solid; */
+}
+.testimonials--article-container .testimoniales--titles-box {
+    width: auto;
+    max-width: 630px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    /* border: #00A6FB 2px solid; */
+    margin: 0 0 95px 0;
+}
+.testimonials--article-container .testimonials--left-container {
+    display: flex;
+    flex-direction: column;
+    /* border: blue 3px solid; */
+}
+.testimonials--article-container .testimoniales--titles-box h3 {
+    font-family: var(--font-titles);
+    font-size: 3.2rem;
+    font-weight: var(--font-weight---title);
+    color: var(--sky-blue);
+}
+.testimonials--article-container .testimoniales--titles-box h2 {
+    font-family: var(--font-titles);
+    font-size: 4.0rem;
+    font-weight: var(--font-weight---title);
+    color: var(--midnight-blue);
+}
+.testimonials--article-container .testimonials-buttons--box {
+    width: auto;
+    height: auto;
+    max-height: 86.47px;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+}
+.testimonials--article-container .testimonials-buttons--box .testimonials-button {
+    height: 86.47px;
+    width: 86.47px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.testimonials--article-container .testimonials-buttons--box .button--left {
+    background-image: url("assets/icons/left-icon.svg");
+}
+.testimonials--article-container .testimonials-buttons--box .button--right {
+    background-image: url("assets/icons/right-icon.svg");
+}
+
+
+.testimonials--article-container .testimonials-cards--container {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 35px;
+}
+.testimonials-cards--container .testimonilas-card {
+    width: 430px;
+    height: 587px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 15px;
+}
+.testimonials-cards--container .card--01 {
+    background-color: #F2C110;
+}
+.testimonials-cards--container .card--02 {
+    background-color: #F44900;
+}
+
+.testimonials-cards--container .testimonilas-card span {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonials-cards--container .card--01 span {
+    background-image: url("assets/img/testimonial_paul.svg");
+}
+.testimonials-cards--container .card--02 span {
+    background-image: url("assets/img/testimonial_bill.svg");
+}
+
+.testimonials-cards--container .testimonilas-card p {
+    font-family: var(--font-testimonials);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.testimonials-cards--container .testimonilas-card button {
+    width: 192px;
+    height: 46px;
+    background-color: var(--forest-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-family: var(--font-testimonials);
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: normal;
+}
+.testimonials-cards--container .card--01 button {
+    color: #F2C110;
+}
+.testimonials-cards--container .card--02 button{
+    color: #F44900;
 }
